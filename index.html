@@ -1,0 +1,382 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<html> 
+<head> 
+<Title>PowerPulsar Home Page</title> 
+<meta name="msvalidate.01" content="BB823D6E132B356F36A04040CB17BF79" />
+<meta name="google-site-verification" content="ysEWHsJBHpceQd5oiMF311VDiaDTfsVsnadDG6UUnPE" />
+<style type="text/css">
+<!--
+.workinprogress_ { visibility: hidden; display: none; }
+-->
+</style>
+</head> 
+<body bgcolor="#FFFFFF"> 
+<center>
+  <h1> Welcome to PowerPulsar's place ! </h1>
+  <table border=0>
+    <tr align="center" valign="middle"> 
+      <td height="84" colspan="3"> 
+        <center>
+          <p><img src="img/zikmu.gif" alt="[zikmu]" width=32 height=30 align=absmiddle> 
+            + <img src="img/tv.gif" alt="[monitor]" width=32 height=32 align=absmiddle> 
+            = <img src="img/rocket.gif" alt="[rocket]" width=32 height=32 align=absmiddle> 
+            ! </p>
+          <p>presenting PowerPulsar, by <a href="#">R'alf</a>
+          </p>
+        </center>
+      </td>
+    </tr>
+    <tr align="center" valign="middle"> 
+      <td height="91"><img src="img/power.gif"  alt="[PowerPulsar Logo]" border=0 width="120" height="79"></td>
+      <td height="91"> 
+        <div align="center">&nbsp;&nbsp;...for...&nbsp;&nbsp;</div></td>
+      <td height="91"> <a href="http://free.be.com/"><img src="img/freedotbedotcom.jpg" width=101 height=51 border=0 alt="Download BeOS 5 Free"></a></td>
+    </tr>
+  </table>
+  <p>PowerPulsar, the <a href="http://www.be.com/developers/aug_dev_conf/masters_aug97/index.html"> 
+    '97 BeOS Master Award</a> winner,<br>
+    is back for <a href="http://www.be.com">BeOS</a> R5 Personal Edition. 
+  </center>
+
+<p><center>
+<hr width="50%">
+  <a href="#Introduction">What is PowerPulsar?</a> | <a href="#Source">Where is 
+  the Source?</a> | <a href="#Stop">Why stop it?</a><br>
+  <a href="#Credits">Credits</a> | <a href="#Source"></a><a href="#Doc">Documentation</a> 
+  | <a href="#Latest">Download Latest</a> 
+  <hr width="100%">
+  <br>
+</center>
+<p>
+<h2><a name="Introduction"></a>What is PowerPulsar anyway ?</h2>
+<table>
+  <tr valign=top> 
+    <td width="49%"> <!-- francais ici --> 
+      <hr>
+      <b>PowerPulsar</b> est une application <a href="http://www.be.com">BeOS</a> 
+      qui affiche en <b>temps r&eacute;el</b> des <b>effets vid&eacute;o</b> synchronis&eacute;s 
+      par la musique.<br>
+      <p> Les effets sont programmables via des <b>add-ons</b>. Plusieurs types 
+        d'addons existeront mais pour l'instant seuls les filtres sont disponibles. 
+        Dans la terminologie PowerPulsar, un <em>filtre</em> est un add-on qui 
+        analyse le son entrant et produit des effets vid&eacute;os sympas.<br>
+        Pour arriver &agrave; ce r&eacute;sultat, PowerPulsar est capable d'utiliser 
+        le son provenant du CD Audio aussi bien que du micro, d'un module ou d'un 
+        player de mp3 -- en fait tout ce que sait g&eacute;rer le Media Kit de 
+        BeOS. PowerPulsar calcule la FFT (Transform&eacute;e de Fourrier Rapide) 
+        du son entrant et appelle les filtres afin qu'ils g&eacute;n&egrave;rent 
+        des effets graphiques qui sont ensuite affich&eacute; dans une fen&ecirc;tre 
+        de pr&eacute;visualisation ou en plein-&eacute;cran. <br>
+        Une interface graphique relativement &eacute;labor&eacute;e permet &agrave; 
+        l'utilisateur de param&egrave;trer ses effets. 
+      <p> Des exemples de code sont fournis et permettent &agrave; n'importe qui 
+        de se programmer son effet favori. Pas besoin de connaissances particuli&egrave;res 
+        en C ou C++ pour cela ! 
+      <p> PowerPulsar a &eacute;t&eacute; pr&eacute;sent&eacute; officiellement 
+        pour la premi&egrave;re fois aux Be Master Awards de la BeDC le 4 et 5 
+        Ao&ucirc;t 1997 &agrave; Boston et &agrave; remport&eacute; un prix.
+      <p> <i>Le reste de cette page est en anglais. D&eacute;sol&eacute;. Je la 
+        traduirais peut-&ecirc;tre plus tard, qui sait ! </i><code>:-)</code> 
+    </td>
+    <td width="2%">&nbsp;</td>
+    <td width="49%"> <!-- english here --> 
+      <hr>
+      <b>PowerPulsar</b> is a <a href="http://www.be.com">BeOS</a> application 
+      that ouputs <b>real time video effects</b> by monitoring input music. 
+      <p> The effects can be freely programed via external <b>add-ons</b>. Several 
+        kind of add-ons will exist but currently only filter add-ons are available. 
+        A <em>filter</em>, in the PowerPulsar's terminology, is a piece of software 
+        that filters the incoming sound input and draws neat video effects on 
+        screen.<br>
+        To achieve this goal, PowerPulsar let's you use music from the Audio CD, 
+        or from any other audio source supported by the BeOS's Media Kit (modules, 
+        mp3 players or microphone).<br>
+        Basically PowerPulsar computes a couple of FFTs (Fast Fourrier Transform) 
+        on the music to get its frequency composition and then call the filter 
+        add-ons to build up nice video effects and blit them on a preview window 
+        or in fullscreen. <br>
+        A sophisticated graphical interface lets the user adapts the effects to 
+        its own needs. 
+      <p> Some sample code helps you write your favourite effects. No need for 
+        extended knowledge in C or C++ for doing this ! 
+      <p> PowerPulsar was officially presented for the first time at Be Master 
+        Awards, at the Boston BeDC, 4 and 5 August 1997 and won an award. 
+      </td>
+  </tr>
+  <tr> 
+    <td width="49%"> 
+      <hr>
+    </td>
+    <td width="2%">&nbsp;</td>
+    <td width="49%"> 
+      <hr>
+    </td>
+  </tr>
+</table>
+<p>There are two important points:
+<ul>
+  <li>Although PowerPulsar is freeware; <a href="#Source">source</a> is not clean 
+    enough to be available, even on request.</li>
+  <li>You are expected to ask my autorisation before bundling this on any kind 
+    of media (CD, etc.)<br>
+    Just e-mail me if you are concerned.</li>
+</ul>
+<center>
+  <hr width="50%">
+  <br>
+</center>
+<p> 
+<h2><a name="Credits"></a>Credits</h2>
+<ul>
+  <li>First of all, <b>Powerpulsar</b> is my <b>pet project</b>.<br>
+    I've been thinking about video/music synchronization for a long time, and 
+    I've been eager to learn about sound processing since my early university 
+    years just because of that... Unfortunately I kind of lack the necessary mathematical 
+    background to master FFTs and such.</li>
+  <li>The application know as Powerpulsar has been mostly <b>shaped visually</b> 
+    by <a href="http://www.ouvre.com/experiences/be/">Jean-Marc Ouvr&eacute;</a>.<br>
+    His support was tremendous, and his <b>help</b> for the graphics was just 
+    awesome.<br>
+    Let's face it: the very first prototype of Powerpulsar for BeOS was plain 
+    ugly: a very bad effect moving in sync with the music. That would not even 
+    qualify as a proof of concept to me right now :-). But when most people where 
+    asking me &quot;<i>what's the use, anyway</i>&quot; or &quot;<i>what's your 
+    business model</i>&quot; [;-)], JiM saw some <b>potential</b> there (sometimes 
+    too much but hey, that's JiM, nobody's gonna stop him :-) !) and we spent 
+    many hours sketching <b>UI</b> and user feedback.</li>
+  <li>Another person I'd like to thank for his support is <b>SpH</b> and his early 
+    enthousiasm.<br>
+    Maybe I should also count him as one of the reasons this happened in the first 
+    place -- after all he's the one who made me love <b>techno music</b>!</li>
+  <li>And finally, a great thank to the various other <b>Powerteam members</b>, 
+    namely Xav, Laurent, and Benoit for their help in <b>coding add-ons</b>.</li>
+</ul>
+
+<span class="workinprogress">
+
+<center>
+  <hr width="50%">
+  <br>
+</center>
+<p> 
+<h2><a name="Source"></a>Where is the source?</h2>
+<p>Powerpulsar is freeware, but freeware does not mean open-source and there isn't 
+  any reason for this to change.<br>
+  Let's be obvious: <i>the source code is not available</i>. Non. Niet. Nada.</p>
+<p>I've been requested the source many times. I fell for it once but that won't 
+  happen again:</p>
+<blockquote> 
+  <p>There was once a fellow BeOS lover who managed to convince me to give him 
+    a source archive so he could recompile it. I warned him it would be terribly 
+    difficult to use, being one of my first &quot;big&quot; project with a design 
+    (or lack thereof) which doesn't make it easy to understand the source. The 
+    build process is not documented and far from trivial too. And the BeOS R5 
+    support is just so-so, especially the lack of add-ons. It ain't pretty and 
+    sure ain't easy. But the BeOS lover still wanted it -- he was tech-savvy enough 
+    to make something out of it, and sure he would love to toy with that. So I 
+    finally agreed on making a nice archive and giving it to him.</p>
+  <p>Never heard anything back since.</p>
+</blockquote>
+<p>So now the answer is an even more firmly no.</p>
+<hr width="50%">
+<h2> <a name="Stop"></a>PowerPulsar for BeOS Stopped - June 2000 </h2>
+<p><b>PowerPulsar for BeOS</b> has been officially stopped in <b>June 2000</b>.<br>
+  That means the PowerPulsar 0.x and the PowerPulsar 2.x that I started working 
+  on. 
+<p>The reason is simple: BeOS as a desktop OS is history. The adventure was fun 
+  but it ended. Be Inc. switched to BeIA, a good move I believe since it was at 
+  least an appealing business plan (understand: one that may generate revenue 
+  a some points). Unfortunately, history has we know it decided this would never 
+  happen and eventually Be should be acquired by Palm (which didn't officially 
+  happen at the time I write this, 10/31/2001).
+<p>This is life. 
+<p>I think there are two main reasons I stopped PowerPulsar: first I got a life, 
+  you know... dating, being outdoors, stuff like that. And second the whole experience 
+  was discouraging. PowerPulsar was supposed to be an add-on engine, but I received 
+  very little support for add-ons writing (yet I am very thankful for the few 
+  who tried at the beginning).
+<p>
+<p>
+<p>Oh yeah I forgot: if you really want to see cool graphic animations on your 
+  screen whilst listenning to music, run <a href="http://www.winamp.com">WinAmp</a> 
+  and use the two most incredibly add-ons I ever found: WhiteCap and G-Force, 
+  by <a href="http://www.55ware.com">55ware</a>. Your mileage may vary.
+<p>After thinking about it, the project is not dead, only frozen for an eternity. 
+  I believe I'll probably keep the name for one of my other toy ideas: having 
+  WhiteCap and G-Force plug'ins run under a console machine, beit the Dreamcast, 
+  PS2, X-Box or GameCube (although I don't have any development system for the 
+  3 latests... too bad.)<br>
+  <br>
+<p>
+<p> 
+<hr width="50%">
+<h2><a name="Doc"></a>Documentation </h2>
+<p>There are some obsolete pages here:<br>
+<ul>
+  <li> The old 
+  <!-- a href="http://www.multimania.com/pwpulsar">web site</a -->
+  <a href="https://web.archive.org/web/19991009185234/http://www.multimania.com/pwpulsar/">web site</a>
+  entry point 
+  <li> The old 
+  <!-- a href="http://www.multimania.com/ralf/pulsar/guidedtour.html" -->
+  <a href="https://web.archive.org/web/19991109131012/http://www.multimania.com/ralf/pulsar/guidedtour.html">
+  guided tour</a> 
+  <li> The old 
+  <!-- a href="http://www.multimania.com/ralf/pulsar/tutorial.html">tutorial</a --> 
+  <a href="https://web.archive.org/web/19991005000707/http://www.multimania.com:80/ralf/pulsar/tutorial.html">tutorial</a> 
+</ul>
+<p>More to come soon... Sorry for the lack of a real documentation.<br>
+  Useful keys include:</p>
+<ul>
+  <li> ALT-1...9/0 : load file "configN.pp" (in main window)</li>
+  <li>F1-F12: load file "configN.pp" (during fullscreen or preview)</li>
+  <li>I: invert video mode (during fullscreen)</li>
+  <li>ESC, Z, Q : exit fullscreen</li>
+  <li> N: Next CD track</li>
+  <li>V: preVious CD track</li>
+  <li> -/+ keypad: volume -/+ (not pluged with new media kit)</li>
+  <li> 0-9 keypad: CD output amplification from 0 to 100%</li>
+</ul>
+<p> "config0.pp" is a special config mode. It's the one loaded at startup. See 
+  the File->Preferences, "Misc" tab to prevent from loading the default config. 
+</p>
+<p> 
+<hr width="50%">
+<h2> PowerPulsar 0.8.1 - 11 May 2000 </h2>
+<p> More add-ons and a couple of interesting fixes.<br>
+  This archive is for BeOS 5 Personal Edition, but it should work also on BeOS 
+  R4.5+.<br>
+  Please read the text file in the archive for more information. 
+<p> <a name="Latest"></a>Here is the archive: 
+<p> 
+<ul>
+  <li> PowerPulsar binary for BeOS 5 PE Intel: PowerPulsar_081_11052000.zip 
+    (1.7 MB) 
+</ul>
+<h3>Comments</h3>
+<ul>
+  <li> Compiled all addons.
+  <li>Made all add-ons sources available for sample code, even if the quality 
+    of the source for addons is not always optimal.
+  <li>Fixed a bug in the CFilter (was storing a BEntry and 3 BDirectories, thus 
+    exhausting the file descriptors). Now using BPath or entry_ref.
+  <li>Fixed a bug in the CFilter::loadBitmap in conjunction with MapPlayer, now 
+    look for image in local and then only in the img directory
+  <li>Fixed the image loader for MapPlayer.
+  <li>Fixed a bug in loadConfig, addons were not terminated.
+</ul>
+<p>There are a few minor bugs to fix later:</p>
+<ul>
+  <li>MapPlayer may crash if the app is quited too quickly (cf unload)
+  <li>4-pixels inversion in the bi-landscape pixel doubler (Big Endian problem)
+  <li>missing facet in the scope3d.
+  <li>landscape addons and others should not erase background. Use flag instead. 
+</ul>
+<hr width="50%">
+<h2> PowerPulsar 0.8.0 - 03 May 2000 </h2>
+<p>
+
+No kidding, I started working again on this project !<br>
+This archive is for BeOS 5 Personal Edition, but it should work also on BeOS R4.5+.<br>
+Please read the text file in the archive for more information.
+<p> Here is the archive: 
+<p>
+<ul>
+<li> PowerPulsar binary for BeOS 5 PE Intel: PowerPulsar_080_04052000.zip (1.3 MB)
+</ul>
+
+<h3>Comments</h3>
+<ul>
+<li> Uses the BeOS 5 PE Media Kit (instead of the old R3-compatible one)
+<li> Implements 32 bpp display correctly
+<li> Lacks a lot of features and need some UI polishing.
+<li> The archive comes with the (kind of obsolete) guided tour. That should do the work to start with.
+<li> There is no French material whatsoever. <i>Si vous estimez que je devrais faire un effort pour
+traduire l'interface et la documentation (ou son absence), veuillez me le faire savoir</i> <code>:-)</code>
+</ul>
+ 
+<hr width="50%">
+<h2> PowerPulsar Snapshot 22 March 1999 </h2>
+<p>
+
+This is the first <i>crude</i> recompilation on R4 Intel.<br>
+Please read all the stuff below before downloading the archive.
+<p>
+Here are the archives :
+<p>
+<ul>
+<li> PowerPulsar binary for R4 Intel: PowerPulsar_snapshot_03221999.zip (1.01 MB) 
+  <li> Sample Add-ons source archive: 1999-03-22.sample_addons_source.zip (192 kB) 
+</ul>
+
+<h3>Usage</h3>
+<ul>
+<li>Download the archive and unzip it somewhere.
+<li>Put an audio cd in your computer. You'll get the best idea of the software by choosing
+		some kinf of techno music (sorry, no offense for those who do not consider this as
+		being music <code>:)</code>). I like to use Trance or Goa for testing. YMMV.
+<li>Under R4.0, you <em>MUST</em> open the Audio Preference panel and select 
+		"CD" as the input source (in the Input tab of the panel).
+<li>Press the "Full Screen" button on the bottom and watch. The CD should start
+		playing when the full screen mode enters.
+<li>Press either "F" or ESCape or "Q" to exit the full screen mode.
+<li>The configuration screen shows an array of applied effects. You can remove one by dragging
+		it to the trash (in the bottom of the window). You can add or change one by dragging it
+		from the left list and placing it in the array.
+<li>I let you figure out the rest of the features.
+</ul>
+
+<h3>Known Limitations</h3>
+There are quite a lot of them <code>:-)</code> :
+<ul>
+<li>This is really really a preliminary. It may crash at any moment !
+<li>No input selection supported. You <em>MUST</em> open the Audio Preference panel
+		and select your input source in the Input tab of the panel. Typically you'll want
+		to use the CD player so you need to select "CD" as the source.
+<li>Chaning tracks while playing will crash, so do not use the keys 'N' and 'V' while
+		playing full screen !
+<li>The CD display in the main window, on top, always prints track #00. Anyway the buttons
+		can change the track or eject. I don't understand this but, I'm on it.
+<li>There are few add-ons. I didn't recompiled them all already.
+<li>The rendering mode currently only supports 8-bpp. 32-bpp will come later and the
+		16-bpp mode is obsolete, I'll remove it.
+</ul>
+
+<p>
+I <b>really</b> appreciate to get feedback. I know there are bugs but you can anyway
+send me bug reports. I'd like to hear from you. You can mail me or find me on IRC :
+<ul>
+
+  <li>e-mail: R'alf
+ (please write "PowerPulsar" in the subject so that my Mail-It filters work !) 
+  <li>IRC: nick "ralf" (aka ralf_home, ralf_work), channel #amigafr on IRCnet
+		or #bedev on EFnet.
+</ul>
+
+<p> If you want to create add-ons, please download the addon source archive and 
+  have a look at the FFT addon. It's a good point to start with. The thing you 
+  want to check is the CFilter.h file that really really is fully commented. I 
+  hope you'll find it no too much obscure or obfuscated. Note that you must not 
+  try to use anything else that the 8-bpp API. I'll add the support for 32-bpp 
+  soon. 
+<p>&nbsp; 
+<hr width="50%"> 
+
+<center>
+  <p> <font size="-1">The Be and freebe icons used herein are the property of 
+    Be, Incorporated and are used by permission. </font><br>
+    <font size="-1">All archives created using ZipMe.</font><br>
+    <br>
+    <font size="-1"><a href="https://www.alfray.com">Alfray</a> | <a href="http://www.powerpulsar.com">Powerpulsar</a> 
+    | <a href="https://www.alfray.com">R'alf Home Page</a><br>
+    Last Updated: July 31, 2004<br>
+    Created: March, 1999</font>
+</center> 
+
+</span> <!-- end of workinprogress -->
+
+
+</body> 
+
+</html>
+
